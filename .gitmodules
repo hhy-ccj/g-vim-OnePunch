@@ -1,0 +1,60 @@
+[submodule "vimfiles/bundle/OmniCppComplete"]
+	path = vimfiles/bundle/OmniCppComplete
+	url = https://github.com/vim-scripts/OmniCppComplete.git
+[submodule "vimfiles/bundle/Vundle.vim"]
+	path = vimfiles/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "vimfiles/bundle/bufexplorer"]
+	path = vimfiles/bundle/bufexplorer
+	url = https://github.com/jlanzarotta/bufexplorer.git
+[submodule "vimfiles/bundle/code_complete"]
+	path = vimfiles/bundle/code_complete
+	url = https://github.com/mbbill/code_complete.git
+[submodule "vimfiles/bundle/genutils"]
+	path = vimfiles/bundle/genutils
+	url = https://github.com/vim-scripts/genutils.git
+[submodule "vimfiles/bundle/indentLine"]
+	path = vimfiles/bundle/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "vimfiles/bundle/lookupfile"]
+	path = vimfiles/bundle/lookupfile
+	url = https://github.com/vim-scripts/lookupfile.git
+[submodule "vimfiles/bundle/neocomplcache.vim"]
+	path = vimfiles/bundle/neocomplcache.vim
+	url = https://github.com/Shougo/neocomplcache.vim.git
+[submodule "vimfiles/bundle/nerdtree"]
+	path = vimfiles/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vimfiles/bundle/rainbow_parentheses.vim"]
+	path = vimfiles/bundle/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "vimfiles/bundle/std_c.zip"]
+	path = vimfiles/bundle/std_c.zip
+	url = https://github.com/vim-scripts/std_c.zip.git
+[submodule "vimfiles/bundle/tComment"]
+	path = vimfiles/bundle/tComment
+	url = https://github.com/vim-scripts/tComment.git
+[submodule "vimfiles/bundle/taglist.vim"]
+	path = vimfiles/bundle/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "vimfiles/bundle/vim-airline"]
+	path = vimfiles/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vimfiles/bundle/vim-airline-themes"]
+	path = vimfiles/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vimfiles/bundle/vim-easymotion"]
+	path = vimfiles/bundle/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "vimfiles/bundle/vim-fugitive"]
+	path = vimfiles/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vimfiles/bundle/vim-multiple-cursors"]
+	path = vimfiles/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "vimfiles/bundle/vim-repeat"]
+	path = vimfiles/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "vimfiles/bundle/vim-interestingwords"]
+	path = vimfiles/bundle/vim-interestingwords
+	url = https://github.com/lfv89/vim-interestingwords.git
