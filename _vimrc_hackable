@@ -1,5 +1,5 @@
 " ============================================================================
-"				<< 基判断操作系统是否是 Windows 还是 Linux >>								
+"				<< 基判断操作系统是否是 Windows 还是 Linux >>
 " ============================================================================
 let g:iswindows = 0
 let g:islinux 	= 0
@@ -46,16 +46,16 @@ endif
 " VIM ORIGIN DEFAULT CONFIG---------------------------------------------------------------------------END
 
 
-" VIM CONFIG SET BY huayue_hu*************************************************************************START 
+" VIM CONFIG SET BY huayue_hu*************************************************************************START
 "
 " ============================================================================
-"							<< 基本设定 >>								
+"							<< 基本设定 >>
 " ============================================================================
 "
 " ---vimrc文件设定
-" 不使用本地版本（.g(vimrc), .exrc） 
-" set noexrc 
-" set cpoptions=aABceFsmq 
+" 不使用本地版本（.g(vimrc), .exrc）
+" set noexrc
+" set cpoptions=aABceFsmq
 
 " ---界面设置
 if (g:islinux)
@@ -70,13 +70,13 @@ if (g:islinux)
 		" let g:solarized_termcolors=256
 		colorscheme solarized		" 设定配色方案
 		" option name default optional ------------------------------------------------
-		let g:solarized_termcolors= 16 | 256 
-		let g:solarized_termtrans = 0 | 1 
-		let g:solarized_degrade = 0 | 1 
-		let g:solarized_bold = 1 | 0 
-		let g:solarized_underline = 1 | 0 
-		let g:solarized_italic = 1 | 0 
-		let g:solarized_contrast = "normal"| "high" or "low" 
+		let g:solarized_termcolors= 16 | 256
+		let g:solarized_termtrans = 0 | 1
+		let g:solarized_degrade = 0 | 1
+		let g:solarized_bold = 1 | 0
+		let g:solarized_underline = 1 | 0
+		let g:solarized_italic = 1 | 0
+		let g:solarized_contrast = "normal"| "high" or "low"
 		let g:solarized_visibility= "normal"| "high" or "low"
 	endif
 else
@@ -91,13 +91,13 @@ else
 		" let g:solarized_termcolors=256
 		colorscheme solarized		" 设定配色方案
 		" option name default optional ------------------------------------------------
-		let g:solarized_termcolors= 16 | 256 
-		let g:solarized_termtrans = 0 | 1 
-		let g:solarized_degrade = 0 | 1 
-		let g:solarized_bold = 1 | 0 
-		let g:solarized_underline = 1 | 0 
-		let g:solarized_italic = 1 | 0 
-		let g:solarized_contrast = "normal"| "high" or "low" 
+		let g:solarized_termcolors= 16 | 256
+		let g:solarized_termtrans = 0 | 1
+		let g:solarized_degrade = 0 | 1
+		let g:solarized_bold = 1 | 0
+		let g:solarized_underline = 1 | 0
+		let g:solarized_italic = 1 | 0
+		let g:solarized_contrast = "normal"| "high" or "low"
 		let g:solarized_visibility= "normal"| "high" or "low"
 	endif
 endif
@@ -113,7 +113,7 @@ set guioptions-=r 			" 关闭右侧滚动条
 set guioptions-=L 			" 关闭左侧滚动条
 " 在状态行上显示光标所在位置的行号和列号(使用powerline插件后无效,但仍可保留)
 set ruler                   " 打开状态栏标尺(默认已打开)
-set rulerformat=%20(%2*%<%f%=\ %m%r\ %3l\ %c\ %p%%%) 
+set rulerformat=%20(%2*%<%f%=\ %m%r\ %3l\ %c\ %p%%%)
 " 设置字体、字号
 set anti enc=utf-8
 " set guifont=Courier_New:h13:cANSI
@@ -143,7 +143,7 @@ endif
 
 " ---linux下透明背景设置
 if (g:islinux)
-	hi Normal  ctermfg=252 ctermbg=none 
+	hi Normal  ctermfg=252 ctermbg=none
 endif
 
 " ---开启保存 undo 历史功能
@@ -168,7 +168,7 @@ set completeopt-=preview
 
 
 " ============================================================================
-"							<< 编码设定 >>								
+"							<< 编码设定 >>
 " ============================================================================
 " 注：使用utf-8格式后，软件与程序源码、文件路径不能有中文，否则报错
 set encoding=utf-8                                    "设置gvim内部编码
@@ -190,7 +190,7 @@ endif
 
 
 " ============================================================================
-"							<< 插件配置 >>								
+"							<< 插件配置 >>
 " ============================================================================
 "
 " -------------------------------------------------------------
@@ -393,7 +393,7 @@ if (g:powerline_en)
 	let g:Powerline_symbols = 'fancy'
 
 	" Always show the statusline
-	set laststatus=2   
+	set laststatus=2
 
 	" 解决windows & linux下部分特殊符号显示出错的问题，需要安装4个特殊字体到系统
 	" 下载源地址：https://github.com/eugeii/consolas-powerline-vim
@@ -407,7 +407,7 @@ endif
 " -------------------------------------------------------------
 if (g:airline_en)
 	" Always show the statusline
-	set laststatus=2   
+	set laststatus=2
 
 	let g:airline_powerline_fonts = 1
 
@@ -452,9 +452,9 @@ if (g:airline_en)
 	"
 
 	" fix exit insert mode delay
-	set ttimeoutlen=50   
+	set ttimeoutlen=50
 	" theme:dark light simple badwolf molokai base16 murmur luna wombat bubblegum jellybeans laederon
-	"papercolor kolor kalisi behelit base16color 
+	"papercolor kolor kalisi behelit base16color
 	if (g:iswindows)
 		let g:airline_theme='kolor'
 	else
@@ -665,9 +665,9 @@ if (g:easygrep)
 	nmap <silent><Leader>vo :GrepOptions<CR>
 	nmap <silent><Leader>vu :ReplaceUndo<CR>
 
-	nmap ;vs :Grep 
-	nmap ;vr :Replace 
-endif	
+	nmap ;vs :Grep
+	nmap ;vr :Replace
+endif
 
 " -------------------------------------------------------------
 "  < omnicppcomplete 插件配置 >
@@ -678,14 +678,14 @@ endif
 if (g:OmniCppComplete_en)
 	set nocp
 	filetype plugin on
-	" set completeopt=menu,menuone  
+	" set completeopt=menu,menuone
 	" set completeopt=menu
 	" let OmniCpp_MayCompleteDot=1    "打开  . 操作符
 	" let OmniCpp_MayCompleteArrow=1  "打开 -> 操作符
 	" let OmniCpp_MayCompleteScope=1  "打开 :: 操作符
 	" let OmniCpp_NamespaceSearch=1   "打开命名空间
-	" let OmniCpp_GlobalScopeSearch=1  
-	" let OmniCpp_DefaultNamespace=["std"]  
+	" let OmniCpp_GlobalScopeSearch=1
+	" let OmniCpp_DefaultNamespace=["std"]
 	" let OmniCpp_ShowPrototypeInAbbr=1  		"打开显示函数原型
 	" let OmniCpp_SelectFirstItem = 2			"自动弹出时自动跳至第一个
 	"
@@ -735,7 +735,7 @@ if (g:gundo_en)
 	nnoremap <Leader>ud :GundoToggle<CR>
 endif
 
-" ------------------------------------------------------------- "  
+" ------------------------------------------------------------- "
 "  < easymotion 插件配置 >
 " -------------------------------------------------------------
 if (g:easymotion_en)
@@ -747,16 +747,16 @@ if (g:easymotion_en)
     " `s{char}{char}{label}`
     " Need one more keystroke, but on average, it may be more comfortable.
     nmap 's <Plug>(easymotion-overwin-f2)
-       
+
     " Turn on case insensitive feature
     let g:EasyMotion_smartcase = 1
-       
+
     " JK motions: Line motions
     map ;j <Plug>(easymotion-j)
     map ;k <Plug>(easymotion-k)
-endif  
+endif
 
-" ------------------------------------------------------------- 
+" -------------------------------------------------------------
 "  < interestingwords 插件配置 >
 " -------------------------------------------------------------
 if (g:interestingwords_en)
@@ -778,7 +778,7 @@ if (g:interestingwords_en)
 	let g:interestingWordsRandomiseColors = 1
 endif
 
-" ------------------------------------------------------------- 
+" -------------------------------------------------------------
 "  < rainbow_parentheses 插件配置 >
 " -------------------------------------------------------------
 if (g:rainbow_parentheses)
@@ -812,7 +812,7 @@ if (g:rainbow_parentheses)
 	" :RainbowParenthesesLoadSquare   " []
 	" :RainbowParenthesesLoadBraces   " {}
 	" :RainbowParenthesesLoadChevrons " <>
-	
+
 	" Always On
 	au VimEnter * RainbowParenthesesToggle
 	" au Syntax * RainbowParenthesesLoadRound
@@ -820,13 +820,13 @@ if (g:rainbow_parentheses)
 	au Syntax * RainbowParenthesesLoadBraces
 endif
 
-" ------------------------------------------------------------- 
+" -------------------------------------------------------------
 "  < indentLine_en 插件配置 >
 " -------------------------------------------------------------
 if (g:indentLine_en)
 	" 高亮缩进符号
 	" let g:indentLine_setColors = 0
-	
+
 	" 缩进符号颜色设置
 	let g:indentLine_color_term = 'grey'
 	let g:indentLine_color_gui = '#71dcff'
@@ -836,12 +836,12 @@ if (g:indentLine_en)
 	" let g:indentLine_conceallevel = 2
 endif
 
-" ------------------------------------------------------------- 
+" -------------------------------------------------------------
 "  < YouCompleteMe 插件配置 >
 " -------------------------------------------------------------
 if (g:youcompleteme_en)
     let g:ycm_server_python_interpreter = '/usr/bin/python'
-    " 不显示开启vim时检查ycm_extra_conf文件的信息  
+    " 不显示开启vim时检查ycm_extra_conf文件的信息
     let g:ycm_confirm_extra_conf = 0
 
 	"在注释输入中也能补全
@@ -855,7 +855,7 @@ if (g:youcompleteme_en)
     " au BufReadPost * silent YcmDiags
 endif
 
-" ------------------------------------------------------------- 
+" -------------------------------------------------------------
 "  < code_complete 插件配置 >
 " -------------------------------------------------------------
 if (g:code_complete)
@@ -893,20 +893,20 @@ if (g:code_complete)
     endif
 endif
 
-" ------------------------------------------------------------- 
+" -------------------------------------------------------------
 "  < code_minimap 插件配置 >
 " -------------------------------------------------------------
 if (g:code_minimap)
     let g:minimap_show='<leader>ms'
     let g:minimap_update='<leader>mu'
     let g:minimap_close='<leader>gc'
-    let g:minimap_toggle='<leader>gt' 
+    let g:minimap_toggle='<leader>gt'
 
     let g:minimap_highlight='Visual'
 endif
 
 " ============================================================================
-"							<< 工具配置 >>								
+"							<< 工具配置 >>
 " ============================================================================
 "
 " -------------------------------------------------------------
@@ -919,11 +919,11 @@ endif
 " 自定义快捷键："\fs"或者"fs"		Find this C symbol
 "				"\fg"或者"fg"		Find this definition
 "				"\fc"或者"fc"		Find functions calling this function
-"				"\ft"或者"ft"		Find this text string	
+"				"\ft"或者"ft"		Find this text string
 "				"\fe"或者"fe"		Find this egrep pattern
 "				"\ff"或者"ff"		Find this file
 "				"\fi"或者"fi"		Find files #including this file
-"				"\fd"或者"fd"		Find functions called by this function	
+"				"\fd"或者"fd"		Find functions called by this function
 function! Session_load()
 	" if &filetype == 'svim'
 	" if has("workspace.svim")
@@ -958,34 +958,34 @@ function!  Cscope_init()
 		" 如果你想反向搜索顺序设置为1
 		set csto=0
 		" 在当前目录中添加任何数据库
-		if filereadable("cscope.out") 
+		if filereadable("cscope.out")
 			cs add cscope.out
 			normal :<CR>
-		" 否则添加数据库环境中所指出的 
-		elseif $CSCOPE_DB != "" 
-			cs add $CSCOPE_DB 
-		endif 
-		set cscopeverbose 
+		" 否则添加数据库环境中所指出的
+		elseif $CSCOPE_DB != ""
+			cs add $CSCOPE_DB
+		endif
+		set cscopeverbose
 		" 自定义快捷键设置：针对光标在文件窗口
 		nmap <Leader>fs :cs find s <C-R>=expand("<cword>")<CR><CR>:botright copen 6<CR>
 		vmap <Leader>fs <C-C>:cs find s <S-Insert><CR><CR>:botright copen 6<CR>
 		nmap <Leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
 		nmap <Leader>fc :cs find c <C-R>=expand("<cword>")<CR><CR>:botright copen 6<CR>
-		nmap <Leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>:botright copen 6<CR>	
+		nmap <Leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>:botright copen 6<CR>
 		vmap <Leader>ft <C-C>:cs find t <S-Insert><CR><CR>:botright copen 6<CR>
-		nmap <Leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>:botright copen 6<CR>	
+		nmap <Leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>:botright copen 6<CR>
 		nmap <Leader>ff :cs find f <C-R>=expand("<cfile>")<CR><CR>
 		nmap <Leader>fi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>:botright copen 6<CR>
-		nmap <Leader>fd :cs find d <C-R>=expand("<cword>")<CR><CR>:botright copen 6<CR>	
+		nmap <Leader>fd :cs find d <C-R>=expand("<cword>")<CR><CR>:botright copen 6<CR>
 		" 自定义快捷键设置：针对光标在命令输入窗口
-		nmap ;fs :cscope find s 
-		nmap ;fg :cscope find g 
-		nmap ;fc :cscope find c 
-		nmap ;ft :cscope find t 
-		nmap ;fe :cscope find e 
-		nmap ;ff :cscope find f 
-		nmap ;fi :cscope find i 
-		nmap ;fd :cscope find d 
+		nmap ;fs :cscope find s
+		nmap ;fg :cscope find g
+		nmap ;fc :cscope find c
+		nmap ;ft :cscope find t
+		nmap ;fe :cscope find e
+		nmap ;ff :cscope find f
+		nmap ;fi :cscope find i
+		nmap ;fd :cscope find d
 	endif
 	" ---lookupfile设置
 	" if filereadable("filenametags")
@@ -1030,12 +1030,12 @@ autocmd ShellCmdPost * silent call CscopeSyncLast()
 "---normal模式无动作后到达updatetime触发CursorHold事件
 set updatetime=6000
 " au CursorHold *.[ch] silent call CscopeSync()
-"---常规模式下键入 sy 使能该工具 
+"---常规模式下键入 sy 使能该工具
 nmap <silent>sy :call CscopeSync()<CR><CR><CR><CR>
 
 
 " -------------------------------------------------------------
-"  < vimtweak 工具配置 > 
+"  < vimtweak 工具配置 >
 " -------------------------------------------------------------
 " 功能说明：用于窗口透明与置顶，仅限于Windows使用
 " 使用说明：请确保vim74文件夹存在vimtweak.dll，并将vim74文件夹加入系统环境变量
@@ -1047,7 +1047,7 @@ if (g:iswindows)
     let dll_path = "vimtweak.dll"
     let g:Current_Alpha = 220
     let g:Top_Most = 0
-	
+
     func! Alpha_add()
         let g:Current_Alpha = g:Current_Alpha + 10
         if g:Current_Alpha > 255
@@ -1085,7 +1085,7 @@ endif
 " -------------------------------------------------------------
 " 功能说明：全屏窗口(不仅是最大化)，仅限于Windows使用
 " 使用说明：请确保vim74文件夹存在gvimfullscreen.dll，并将vim74文件夹加入系统环境变量
-" 自带快捷键：没有 
+" 自带快捷键：没有
 " 自定义快捷键："F11"
 if (g:iswindows)
 	map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
@@ -1094,7 +1094,7 @@ endif
 
 
 " ============================================================================
-"							<< 自定义快捷键设置 >>								
+"							<< 自定义快捷键设置 >>
 " 详细map参考 "http://www.jianshu.com/p/8ae25a680ed7"
 " ============================================================================
 "
@@ -1135,12 +1135,12 @@ nmap cM :%s/\r$//g<cr>:noh<cr>
 " ---常规模式下 makefile 快捷键
 " for codeblocks build
 function! Codeblocks_build()
-	set makeprg=codeblocks\ --build\ *.cbp 	
+	set makeprg=codeblocks\ --build\ *.cbp
     set errorformat=%f:%l:%c:\ %trror:\ %m
     " 将相对路径转为绝对路径
     set errorformat+=\
 					\%D%*\\a[%*\\d]:\ Entering\ directory\ %*[`']%f',
-	make							
+	make
 	botright copen 6
 	" normal G
 endfunction
@@ -1248,7 +1248,7 @@ function! GNU_Makefile(target, param)
         if l:make_target == 'libs'
             if g:JL_MakeApps_name == 'app'
                 exe "normal! :make clean ".l:make_param." && make libs ".l:make_param."\<cr>"
-            else 
+            else
                 exe "normal! :make clean_libs ".l:make_param." && make libs ".l:make_param."\<cr>"
             endif
         else
@@ -1361,7 +1361,7 @@ imap an<Enter>  &= ~<Esc>a
 imap {<Enter> {<Esc>o<tab><Esc>o}<Esc>ka<tab><Esc>lDa
 " 小括号自动补齐 输入"("后按回车键自动补齐")"并进入插入模式
 " imap (<Enter> ()<Esc>i
-" endif注释 
+" endif注释
 imap #ef<Enter>  #endif /*  */<Left><Left><Left><Esc>
 
 " ---常规模式下 quickfix 跳转快捷键
@@ -1382,7 +1382,7 @@ if (g:islinux)
 	nmap <Leader>ev :e ~/.vimrc<CR>
 	nmap <Leader>ez :e ~/.zshrc<CR>
 else
-	nmap <Leader>ev :e $vim/_vimrc<CR>
+	nmap <Leader>ev :e $vim/_vimrc_hackable<CR>
 endif
 
 " ---常规模式下 编辑zshrc/sync.h文件(仅适用于linux)
@@ -1438,7 +1438,7 @@ map J 5j
 map K 5k
 map L 5l
 
-" ---自动跳转到粘贴文本的最后 
+" ---自动跳转到粘贴文本的最后
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
@@ -1460,7 +1460,7 @@ cmap qf     botright copen 6
 " ---F1 打开/关闭quickfix窗口
 " let g:qf_windows_flag = 1
 " function! Open_quickfix_window()
-"     if (g:qf_windows_flag)   
+"     if (g:qf_windows_flag)
 "         let g:qf_windows_flag = 0
 "         botright copen 6
 "     else
@@ -1540,7 +1540,7 @@ vmap <silent>^ 		<C-C>:ntdir<S-Insert><Enter>R
 " --- toggle粘贴模式
 let g:set_paste_flag = 1
 function! Set_paste()
-    if (g:set_paste_flag)   
+    if (g:set_paste_flag)
         let g:set_paste_flag = 0
         set paste
     else
@@ -1601,7 +1601,7 @@ function! Enter_BuiltIn_gdb()
     if !empty(glob("./.GdbIsExist"))
         echoerr "   !!! Gdb already exist !!!"
         return
-    else 
+    else
         " gdb can not open again now
         call system("touch ./.GdbIsExist")
     endif
@@ -1816,7 +1816,7 @@ endif
 nmap [[ [[k;e{b*
 
 " ============================================================================
-"			<< 自定义设置 >>								
+"			<< 自定义设置 >>
 " ============================================================================
 " ---reload上次关闭文件时的光标位置
 " Uncomment the following to have Vim jump to the last position when
@@ -1856,7 +1856,7 @@ autocmd BufEnter *.lst silent exe "normal! \<c-c>"
 " autocmd! BufWritePost *.c normal G
 
 " ---project workspace 配置
-" 保存当前工程的vim配置 
+" 保存当前工程的vim配置
 " nmap <F11> :mksession! workspace.vim<CR> :wviminfo! workspace.viminfo<CR> :xa<CR>
 " 加载上次工程vim配置
 " nmap <F12> :source workspace.vim<CR> :rviminfo workspace.viminfo<CR>
@@ -1890,8 +1890,8 @@ autocmd BufEnter *.lst silent exe "normal! \<c-c>"
 " :set guifont 		#windows下显示当前字号
 " [+d #宏定义快速查看
 " v-block 块模式下替换操作
-	" c:替换选中字符 
-	" C:替换选中字符到行尾 
+	" c:替换选中字符
+	" C:替换选中字符到行尾
 " 16进制查看
     " :%!xxd        #以16进制方法查看
     " :%!xxd -r     #恢复10进制
