@@ -9,7 +9,6 @@ else
     let g:islinux 	= 1
 endif
 
-
 " VIM ORIGIN DEFAULT CONFIG---------------------------------------------------------------------------START
 
 " windows下才有效：模仿windows快捷键 Ctrl+A全选、Ctrl+C复制、Ctrl+V粘贴
@@ -462,7 +461,7 @@ if (g:airline_en)
 		let g:airline_theme='dracula'
 	endif
 
-	set guifont=Droid_Sans_Mono_Slashed_for_Pow:h15:cANSI " 字体字号设置：h13代表字号
+	set guifont=Ubuntu_Mono_derivative_Powerlin:h11:cANSI " 字体字号设置：h13代表字号
 	" set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Regular:h13:cANSI " 字体字号设置：h13代表字号
 	" set guifont=Droid_Sans_Mono_Slashed_for_Pow:h13:cANSI " 字体字号设置：h13代表字号
 	" set guifont=Hack:h13:cANSI " 字体字号设置：h13代表字号
@@ -1907,4 +1906,3 @@ autocmd BufEnter *.lst silent exe "normal! \<c-c>"
         " “@”——访问寄存器。
 
 " VIM CONFIG SET BY huayue_hu*************************************************************************END
-
