@@ -1,4 +1,4 @@
-# (g)vim :punch: 一拳搞掂
+# (g)vim :punch:
 ---
 
 ## 使用说明
@@ -7,7 +7,7 @@
 
     - 下载安装 [git bash][2] 工具
 
-    - 打开 `gvim` 安装路径，在该文件夹空白背景下单击鼠标右键选择 `Git Bash Here`，输入以下命令
+    - 打开 `gvim` 安装路径，在该文件夹空白背景下鼠标右键选择 `Git Bash Here`，输入以下命令
       ```bash
       git clone --recurse-submodules https://github.com/hhy-ccj/g-vim-OnePunch ./g-vim-OnePunch
       ```
@@ -23,7 +23,7 @@
 
     bash install.sh Linux
     ```
->	:congratulations: 哪里都可以愉快地使用个性化配置的 `vim` 了, 一拳令你变超人 :beers:
+>	:congratulations: 哪里都可以愉快地使用个性化配置的 `vim` 了 :beers:
 
 [1]:https://www.vim.org/download.php
 [2]:https://gitforwindows.org/
