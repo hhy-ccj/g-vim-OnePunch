@@ -23,7 +23,7 @@
 
     bash install.sh Linux
     ```
->	:congratulations: 哪里都可以愉快地使用个性化配置的 `vim` 了 :beers:
+>	## :congratulations: 哪里都可以愉快地使用个性化配置的 `vim` 了 :beers:
 
 [1]:https://www.vim.org/download.php
 [2]:https://gitforwindows.org/
