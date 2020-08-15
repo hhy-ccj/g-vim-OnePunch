@@ -7,9 +7,9 @@ set cur_timestamp=%date:~0,4%%date:~5,2%%date:~8,2%_%time:~0,2%%time:~3,2%%time:
 set vimrc_path=.\..
 if exist "%vimrc_path%\_vimrc" (
     :: 以当前时间戳备份原文件
-    copy /y %vimrc_path%\_vimrc %vimrc_path%\_vimrc_%cur_timestamp%
+    copy /y %vimrc_path%\_vimrc %vimrc_path%\_vimrc_%cur_timestamp% 1<nul 2<nul
 )
-copy /y .\vimrc %vimrc_path%\_vimrc
+copy /y .\vimrc %vimrc_path%\_vimrc 1<nul 2<nul
 
 ::--------------------------------------
 :: 创建 undo 历史保存目录
@@ -24,6 +24,8 @@ md %undo_path%
 ::--------------------------------------
 :: 安装依赖字体
 ::--------------------------------------
+:: -- 分号";"表四powershell一行执行多个命令
+powershell Set-ExecutionPolicy Bypass; .\vimfiles\fonts\install.ps1
 
 ::-------------------------------------------------------
 :: 将 vimfiles/tools 加入全局环境变量，用于全局调用 sync.bat
@@ -84,9 +86,12 @@ goto :eof
 :: -- 在 环境变量->系统变量->Path 开头增加新路径
 :path_add
     call :printf "Add new path to the system path" %bBlack_fPurple%
-    setx /m "path" "%target_path%;%path%"
+    :: 1<nul表示屏蔽成功信息, 2<nul表示屏蔽失败信息
+    setx /m "path" "%target_path%;%path%" 1<nul 2<nul
 :: -- 安装成功
 :install_end
     call :printf "Install gvim in Windows successfully" %bBlue_fWhite%
+    echo=
+    echo=
 
 pause
